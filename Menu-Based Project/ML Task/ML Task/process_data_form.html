@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Process Dataset</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="upload_form.html">Upload Image</a>
+        <a href="process_data_form.html">Process Dataset</a>
+        <a href="apply_filter_form.html">Apply Filter</a>
+        <a href="generate_custom_image.html">Generate Custom Image</a>
+        <a href="apply_cool_filter_form.html">Apply Cool Filter</a>
+    </div>
+
+    <div class="container">
+        <h1>Process Dataset</h1>
+        <form action="/process_data" method="post" enctype="multipart/form-data">
+            <input type="file" name="dataset" accept=".csv" required>
+            <button type="submit">Process Data</button>
+        </form>
+    </div>
+</body>
+</html>

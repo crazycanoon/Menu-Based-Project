@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrape Google</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Scrape Google</h1>
+    <form action="scrape_google.html" method="post">
+        <label for="query">Search Query:</label>
+        <input type="text" id="query" name="query" required>
+        <button type="submit">Search</button>
+    </form>
+    {% if results %}
+        <h2>Results:</h2>
+        <ul>
+            {% for result in results %}
+                <li><a href="{{ result }}" target="_blank">{{ result }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
