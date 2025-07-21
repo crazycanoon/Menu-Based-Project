@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Send Bulk Emails</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Send Bulk Emails</h1>
+    <form action="send_bulk_emails.html" method="post">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+        <label for="body">Body:</label>
+        <textarea id="body" name="body" required></textarea>
+        <label for="addresses">To Addresses (comma separated):</label>
+        <input type="text" id="addresses" name="addresses" required>
+        <button type="submit">Send Bulk Emails</button>
+    </form>
+</body>
+</html>

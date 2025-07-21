@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Location</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Get Location</h1>
+    <p>Fetching your current location...</p>
+    <script>
+        fetch(get_location.html)
+            .then(response => response.json())
+            .then(data => {
+                document.body.innerHTML += `<p>Latitude: ${data.latlng[0]}</p>`;
+                document.body.innerHTML += `<p>Longitude: ${data.latlng[1]}</p>`;
+                document.body.innerHTML += `<p>Address: ${data.address}</p>`;
+            });
+    </script>
+</body>
+</html>
